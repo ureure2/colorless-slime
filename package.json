@@ -1,0 +1,32 @@
+{
+  "name": "colorless-slime",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite --config culture-note.vite.config.ts",
+    "build": "vite build --config culture-note.vite.config.ts",
+    "typecheck": "tsc --noEmit -p tsconfig.culture-note.json",
+    "test": "node --test tests/culture-note-*.test.mjs",
+    "verify": "npm run typecheck && npm run test && npm run build",
+    "desktop:dev": "tauri dev",
+    "desktop:build": "tauri build",
+    "desktop:verify": "npm run verify && cargo check --manifest-path src-tauri/Cargo.toml --locked"
+  },
+  "dependencies": {
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "@types/node": "22.19.19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
+    "@vitejs/plugin-react": "6.0.2",
+    "typescript": "5.9.3",
+    "vite": "8.2.2"
+  },
+  "type": "module"
+}

@@ -1,0 +1,16 @@
+[package]
+name = "musaek-slime"
+version = "0.1.0"
+description = "두 개의 작은 AI를 가르치고 관찰하는 배양 노트"
+authors = ["Musaek Slime Contributors"]
+edition = "2021"
+
+[lib]
+name = "musaek_slime_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
