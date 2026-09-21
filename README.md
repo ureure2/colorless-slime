@@ -4,6 +4,9 @@
 
 각 슬라임은 독립적인 단어·문구 기억을 가지며 반응은 `-1`부터 `+1`까지 표시됩니다.
 
+<img width="1100" height="657" alt="스크린샷 2026-09-07 143443" src="https://github.com/user-attachments/assets/e9e04fe8-2f75-4433-a816-e43a9c31ef2d" />
+
+
 ## 주요 기능
 
 - 두 개의 독립된 슬라임 슬롯
